@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="main.js"></script>
+    <div class="row">
+      <div class="column">
+	Gold: <span class="gold"></span>
+	<span style="display:none" class="show_equipment">Equipment Acquired: <span class="equipment"></span></span>
+	<span style="display:none" class="show_scientist">Scientists: <span class="scientist"></span></span>
+	<span style="display:none" class="show_scientist_equipment">Scientist Equipment Level: <span class="scientist_equipment"></span></span>
+	<span style="display:none" class="show_tnt">TNT in Arsenal: <span class="tnt"></span></span>
+	<span style="display:none" class="show_nitroglycerin">Nitroglycerin in Aresenal: <span class="nitroglycerin"></span></span>
+	<span style="display:none" class="show_spaceship_laser_beam">Space Laser Beam in Aresenal: <span class="spaceship_laser_beam"></span></span>
+	<span style="display:none" class="show_planet">Planet Health: <span class="planet"></span></span>
+      </div>
+      <div class="column">
+	<button onClick="mineGold(1)">Gather Gold</button>
+	<button style="display:none" class="show_equipment" onClick="purchaseEquipment(1)">Purchase Equipment: $<span class="equipment_cost"></span></button>
+	<button style="display:none" class="show_equipment" onClick="purchaseEquipmentBulk(1)">Purchase 5 Equipment in Bulk: $<span class="equipment_bulk_cost"></button>
+	<button style="display:none" class="show_scientist" onClick="hireScientist(1)">Hire Scientists: $<span class="scientist_cost"></span></button>
+	<button style="display:none" class="show_scientist" onClick="upgradeScientistEquipment(1)">Upgrade Scientists' Equipment: $<span class="scientist_equipment_cost"></span></button>
+	<button style="display:none" class="show_tnt" onClick="purchaseTNT(1)">Purchase TNT with Equipment: <span class="tnt_cost"></span></button>
+	<!button style="display:none" class="show_TNT" onClick="purchaseTNT(5)"><!Purchase 5 TNT in Bulk</button>
+	<button style="display:none" class="show_nitroglycerin" onClick="purchaseNitro(1)">Purchase Nitroglycerin with Equipment: <span class="nitroglycerin_cost"></span></button>
+	<button style="display:none" class="show_spaceship_laser_beam" onClick="purchaseSLB(1)">Purchase Spaceship Laser Beam with Equipment: <span class="spaceship_laser_beam_cost"></span></button>
+	<button style="display:none" class="show_planet" onClick="damagePlanetTNT(1)">Blast the planet with TNT for 51 damage  each hit! <span class="tnt_damage"></span></button>
+	<button style="display:none" class="show_planet" onClick="damagePlanetNitro(1)">Bombard the planet with Nitroglycerin for 445 damage each hit! <span class="nitroglycerin_damage"></span></button>
+	<button style="display:none" class="show_planet" onClick="damagePlanetSLB(1)">Shoot the planet with The Spaceship Laser Beam for 1200 damage each hit! <span class="spaceship_laser_beam_damage"></span></button>
+      </div>
+    </div>
+  </body>
+</html>
